@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Layout</title>
+
+    <style type="text/css">
+      a {
+        text-decoration: none;
+      }
+
+      span {
+        font-family: cursive;
+      }
+
+      td {
+        border: 1px solid #8C9091;
+      }
+
+      .banner {
+        background-image: url(http://wallpapercave.com/wp/hiRxbVu.jpg);
+        background-size: cover;
+        /*width: 100%;*/
+        /*background-attachment: fixed; */
+        background-position: 0px -170px;
+        height: 300px;
+        margin-top: -20px;
+        margin-left: -20px;
+      }
+
+      .banner_circle {
+        position: absolute;
+        background-color: black;
+        border: 5px solid white;
+        width: 100px;
+        height: 100px;
+        top: 230px;
+        border-radius: 50%;
+        margin-left: 275px;
+        text-align: center;
+        color: white;
+        font-family: "Arial Black";
+        font-size: 23px;
+        line-height: 19px;
+      }
+
+      .content {
+        /*border: 2px solid black;*/
+        height: 100%;
+      }
+
+      .about {
+        /*border: 2px solid black;*/
+        color: #8C9091;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 40px;
+        height: 400px;
+        width: 200px;
+        margin-left: 20%;
+        font-family: Verdana;
+        font-size: 15px;
+        /*padding-right: 20px;*/
+      }
+
+      .news {
+        /*border: 2px solid black;*/
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 500px;
+        margin-left: 40px;
+      }
+
+      .fixed_popup {
+        border: 1px solid #8C9091;
+        background-color: #fff;
+        height: 70px;
+        width: 235px;
+        position: fixed;
+        right: 0px;
+        bottom: 10px;
+        box-shadow: -1px 1px 3px -1px;
+        font-size: 18px;
+      }
+
+      .fixed_popup_upper {
+        /*border: 1px solid black;*/
+        font-family: "Arial Black";
+        height: 35px;
+        position: relative;
+        text-align: center;
+      }
+
+      .fixed_popup_lower {
+        /*border: 1px solid black;*/
+        height: 35px;
+        position: relative;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="banner_circle"><br><span>The</span><br>Iron<br>Yard</div>
+    </div>
+    <div class="content">
+      <div class="about">
+        <br>
+        <p><strong>THE IRON YARD | <br> HONG KONG</strong></p>
+        <p>Happenings and updates from The Iron Yard in Hong Kong, China.
+        <hr>
+        <p>SEARCH</p>
+        <form>
+          <input type="text" placeholder="Search keywords">
+        </form>
+      </div>
+      <div class="news">
+        <h1>September 22 starts a New Class of The Iron Yard Hong Kong Students</h1>
+        <p><em>By Brian Dorton, Campus Director at <a href="https://www.theironyard.com/locations/houston.html">The Iron Yard</a> Hong Kong</em></p>
+        <img width=400px src="http://refreshcharleston.com/wp-content/uploads/2014/02/TheIronYard.jpg" />
+      </div>
+      <div class="fixed_popup">
+        <div class="fixed_popup_upper">
+          Never miss a post!
+        </div>
+        <div class="fixed_popup_lower">
+          <a href="https://twitter.com/TheIronYard" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @TheIronYard</a>
+          <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
